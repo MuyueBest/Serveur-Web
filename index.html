@@ -1,23 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+	
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Requête Serveur</title>
+  	<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+	<link href="script.js" type="text/js"/>
+	
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
-
- <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+	
+	<div id="cont">
+    	<form name="formulaire" action="envoi.php" method="post" onSubmit="return send()">
+			<h2><b>Vos Informations</b></h2>
+			<label for="civilites"><b>Civilite : </b></label>
+            <input name="civilite" type="radio" value="Madame" required />Madame
+            <input name="civilite" type="radio" value="Monsieur" required />Monsieur
+            <input name="civilite" type="radio" value="Autre" required />Autre
+            <br>
+			<label><b>nom : </b></label>
+		    <input type="text" placeholder="Entrer le nom" name="nom" required autofocus />
+		    <br>
+		    <label><b>prenom : </b></label>
+		    <input type="text" placeholder="Entrer le prenom" name="prenom" required />
+		    <br>
+		</form>
+    </div>
+	
+	<h2>Information à récupérer sur la base de donnée</h2>
+	
 </body>
 
 </html>

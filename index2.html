@@ -9,7 +9,7 @@
 	<title>Requête Serveur</title>
 	<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
 	<script defer src="https://pyscript.net/alpha/pyscript.js"></script> 
-	<script src="gestionFormulaire.js" defer></script>
+	<script src="gestionFormulaire2.js" defer></script>
 	<script language="javascript">
 		function send() {
 			var confirmation = confirm("Comfirmation de la réinitialisation ?");
@@ -18,7 +18,7 @@
 </head>
 
 <body id="cont">
-	<form method="post" name="formulaire" class="formulairePourBDEtudiant" onreset="return send()">
+	<form method="post" name="formulaire" class="formulairePourBDProf" onreset="return send()">
 		<h2>Informations</h2>
 		<label><b>Requête : </b></label>
 		<input id="requete" type="text" placeholder="Entrer la requête" name="requete" autofocus required /><br>
